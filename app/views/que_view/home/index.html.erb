@@ -1,0 +1,36 @@
+<% if @jobs.any? %>
+  <div class="content">
+    <h1>Jobs</h1>
+
+    <p>Scheduled jobs</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Run At</th>
+          <th>Job ID</th>
+          <th>Job Class</th>
+          <th>Args</th>
+          <th>Error Count</th>
+          <th>Last Error Message</th>
+          <th>Queue Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @jobs.each do |job| %>
+          <tr>
+            <td><%= job.priority %></td>
+            <td><%= job.run_at %></td>
+            <td><%= job.job_id %></td>
+            <td><%= job.job_class %></td>
+            <td><%= job.args %></td>
+            <td><%= job.error_count %></td>
+            <td><%= job.last_error %></td>
+            <td><%= job.queue %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end %>
