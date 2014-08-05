@@ -4,6 +4,8 @@ Visibility into scheuled Que jobs.
 
 [Que](https://github.com/chanks/que)
 
+![screen shot 2014-08-05 at 11 50 46](https://cloud.githubusercontent.com/assets/697418/3806010/9d4a06dc-1c42-11e4-9616-9bc0a0b50679.png)
+
 ## Installation
 
 Add this line to your application’s Gemfile:
