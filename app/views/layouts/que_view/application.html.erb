@@ -333,8 +333,6 @@
           <%= alert %>
         <% elsif notice %>
           <%= notice %>
-        <% elsif Rails.env.development? %>
-          Do not use development information to make decisions about your production environment
         <% else %>
           <%= link_to "QueView", root_path %>
         <% end %>
